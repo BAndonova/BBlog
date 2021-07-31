@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiURL: 'www.BBlog.com/api'
+  apiURL: 'https://bb-bblog.herokuapp.com/'
 };
