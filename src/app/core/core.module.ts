@@ -12,9 +12,7 @@ import { RecentPostsComponent } from './recent-posts/recent-posts.component';
 import { DetailsComponent } from './details/details.component';
 import { PostsAllComponent } from './posts-all/posts-all.component';
 import { QuotesComponent } from './quotes/quotes.component';
-
-
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,10 +29,8 @@ import { QuotesComponent } from './quotes/quotes.component';
     PostsAllComponent,
     QuotesComponent,
   ],
-  imports: [
-    CommonModule
-  ],
-  exports:[
+  imports: [CommonModule],
+  exports: [
     HeaderComponent,
     FooterComponent,
     AboutComponent,
@@ -46,7 +42,8 @@ import { QuotesComponent } from './quotes/quotes.component';
     RecentPostsComponent,
     DetailsComponent,
     PostsAllComponent,
-    QuotesComponent
-  ]
+    QuotesComponent,
+    HttpClientModule
+  ],
 })
-export class CoreModule { }
+export class CoreModule {}
