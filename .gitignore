@@ -43,3 +43,8 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+
+Path: ./bb-bblog/.gitignore
+package-lock.json
+
