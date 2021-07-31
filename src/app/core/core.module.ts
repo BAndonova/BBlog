@@ -15,6 +15,7 @@ import { QuotesComponent } from './quotes/quotes.component';
 
 
 
+
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -28,7 +29,7 @@ import { QuotesComponent } from './quotes/quotes.component';
     RecentPostsComponent,
     DetailsComponent,
     PostsAllComponent,
-    QuotesComponent
+    QuotesComponent,
   ],
   imports: [
     CommonModule

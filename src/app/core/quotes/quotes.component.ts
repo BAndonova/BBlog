@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+// import Swiper core and required modules
+
 
 @Component({
   selector: 'app-quotes',

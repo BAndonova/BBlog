@@ -17,7 +17,8 @@ import { RegisterComponent } from './user/register/register.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CoreModule
+    CoreModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

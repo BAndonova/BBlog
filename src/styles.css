@@ -1,5 +1,10 @@
-# General
+@import '~swiper/swiper-bundle';
+ 
+ 
+ /*--------------------------------------------------------------
+ # General
 --------------------------------------------------------------*/
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #5a656e;
