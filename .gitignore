@@ -45,6 +45,3 @@ testem.log
 Thumbs.db
 
 
-Path: ./bb-bblog/.gitignore
-package-lock.json
-
