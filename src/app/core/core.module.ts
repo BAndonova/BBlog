@@ -29,7 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     PostsAllComponent,
     QuotesComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, HttpClientModule],
   exports: [
     HeaderComponent,
     FooterComponent,
@@ -43,7 +43,7 @@ import { HttpClientModule } from '@angular/common/http';
     DetailsComponent,
     PostsAllComponent,
     QuotesComponent,
-    HttpClientModule
+    
   ],
 })
 export class CoreModule {}

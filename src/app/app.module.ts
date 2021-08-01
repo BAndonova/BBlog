@@ -5,21 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContentService } from './content.service';
 import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
 
-import { LoginComponent } from './user/login/login.component';
-import { RegisterComponent } from './user/register/register.component';
+import { UserModule } from './user/user.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CoreModule,
+    UserModule,
+    SharedModule
     
   ],
   providers: [ContentService],
