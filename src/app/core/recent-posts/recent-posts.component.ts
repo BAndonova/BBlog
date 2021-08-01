@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import {  IPost, Itheme,  } from 'src/app/shared/interfaces';
+import { Component, Input } from '@angular/core';
+import {  IPost  } from 'src/app/shared/interfaces';
 
 @Component({
   selector: 'app-recent-posts',

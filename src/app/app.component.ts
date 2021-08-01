@@ -9,7 +9,7 @@ import { IPost, Itheme } from './shared/interfaces';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  "title": "BBlog"
+  // "title": "BBlog"
 
   recentPosts: IPost[] | undefined;
   
