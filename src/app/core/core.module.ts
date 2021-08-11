@@ -13,6 +13,7 @@ import { DetailsComponent } from './details/details.component';
 import { PostsAllComponent } from './posts-all/posts-all.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
     PostsAllComponent,
     QuotesComponent,
   ],
-  imports: [CommonModule, HttpClientModule],
+  imports: [CommonModule, HttpClientModule, RouterModule],
   exports: [
     HeaderComponent,
     FooterComponent,
@@ -43,7 +44,6 @@ import { HttpClientModule } from '@angular/common/http';
     DetailsComponent,
     PostsAllComponent,
     QuotesComponent,
-    
   ],
 })
 export class CoreModule {}
