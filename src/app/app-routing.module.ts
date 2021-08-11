@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './core/about/about.component';
 import { BooksComponent } from './core/books/books.component';
 import { CookingComponent } from './core/cooking/cooking.component';
+import { LoveComponent } from './core/love/love.component';
 import { PostsAllComponent } from './core/posts-all/posts-all.component';
 import { QuotesComponent } from './core/quotes/quotes.component';
 import { RecentPostsComponent } from './core/recent-posts/recent-posts.component';
@@ -50,13 +51,17 @@ const routes: Routes = [
     component: AboutComponent
   },
   {
+    path: 'love-yourself',
+    component: LoveComponent
+  },
+  {
     path: '**',
     component: NotFoundComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), UserModule],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

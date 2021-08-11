@@ -9,7 +9,7 @@ import { BooksComponent } from './books/books.component';
 import { CookingComponent } from './cooking/cooking.component';
 import { LoveComponent } from './love/love.component';
 import { RecentPostsComponent } from './recent-posts/recent-posts.component';
-import { DetailsComponent } from './details/details.component';
+
 import { PostsAllComponent } from './posts-all/posts-all.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -26,7 +26,6 @@ import { RouterModule } from '@angular/router';
     CookingComponent,
     LoveComponent,
     RecentPostsComponent,
-    DetailsComponent,
     PostsAllComponent,
     QuotesComponent,
   ],
@@ -41,7 +40,6 @@ import { RouterModule } from '@angular/router';
     CookingComponent,
     LoveComponent,
     RecentPostsComponent,
-    DetailsComponent,
     PostsAllComponent,
     QuotesComponent,
   ],

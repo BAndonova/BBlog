@@ -9,6 +9,7 @@ import { SharedModule } from './shared/shared.module';
 
 import { UserModule } from './user/user.module';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { DetailsModule } from './details/details.module';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     AppRoutingModule,
     CoreModule,
     UserModule,
-    SharedModule
+    SharedModule,
+    DetailsModule
     
   ],
   providers: [ContentService],
