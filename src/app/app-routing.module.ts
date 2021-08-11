@@ -8,6 +8,7 @@ import { PostsAllComponent } from './core/posts-all/posts-all.component';
 import { QuotesComponent } from './core/quotes/quotes.component';
 import { RecentPostsComponent } from './core/recent-posts/recent-posts.component';
 import { TripsComponent } from './core/trips/trips.component';
+import { DetailsThemeRoutingModule } from './details/details-theme-routing.module';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { UserModule } from './user/user.module';
@@ -61,7 +62,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), DetailsThemeRoutingModule, UserModule],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
