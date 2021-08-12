@@ -2,6 +2,8 @@ export interface IPost {
   likes: string[]
   _id: string;
   text: string;
+  story: string;
+  pic: BinaryType;
   userId: {
     themes: string[];
     posts: string[];

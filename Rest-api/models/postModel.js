@@ -1,10 +1,19 @@
 const mongoose = require('mongoose');
+const { isBinaryExpression } = require('typescript');
 const { ObjectId } = mongoose.Schema.Types;
 
 const postSchema = new mongoose.Schema({
     text: {
         type: String,
         required: true
+    },
+    story: {
+        type: String,
+        required: true
+    },
+    Pic: {
+        type: isBinaryExpression,
+        required: false
     },
     likes: [{
         type: ObjectId,

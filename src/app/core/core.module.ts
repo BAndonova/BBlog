@@ -8,14 +8,17 @@ import { TripsComponent } from './trips/trips.component';
 import { BooksComponent } from './books/books.component';
 import { CookingComponent } from './cooking/cooking.component';
 import { LoveComponent } from './love/love.component';
-import { RecentPostsComponent } from './recent-posts/recent-posts.component';
 
-import { PostsAllComponent } from './posts-all/posts-all.component';
+
+
 import { QuotesComponent } from './quotes/quotes.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { LocalStorage } from './injection-tokens';
 import { AuthActivate } from './guards/auth.activate';
+import { PostsAllComponent } from './posts-all/posts-all.component';
+import { RecentPostsComponent } from './recent-posts/recent-posts.component';
+
 
 @NgModule({
   declarations: [
@@ -27,8 +30,8 @@ import { AuthActivate } from './guards/auth.activate';
     BooksComponent,
     CookingComponent,
     LoveComponent,
-    RecentPostsComponent,
     PostsAllComponent,
+    RecentPostsComponent,
     QuotesComponent,
   ],
   imports: [CommonModule, HttpClientModule, RouterModule],
@@ -41,8 +44,8 @@ import { AuthActivate } from './guards/auth.activate';
     BooksComponent,
     CookingComponent,
     LoveComponent,
-    RecentPostsComponent,
     PostsAllComponent,
+    RecentPostsComponent,
     QuotesComponent,
   ],
   providers: [
