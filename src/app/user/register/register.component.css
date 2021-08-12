@@ -37,8 +37,9 @@ form.login, form.register {
 
 .login button, .register button {
     color: white;
+    background-color: #DD5A92;
     border: none;
-    border-radius: 0.3em;
+    border-radius: 50px;
     padding: 0.6em 1.2em;
     margin-top: 1.5rem;
     width: 60%;

@@ -35,7 +35,7 @@
           <li *ngIf="!isLogged"><a class="nav-link scrollto" routerLink="/login">Login</a></li>
           <li *ngIf="isLogged"><a class="nav-link scrollto" routerLink="/profile">{{firstName}}'s profile</a></li>
           <li *ngIf="isLogged"><a class="nav-link scrollto" (click)="logout()">Logout</a></li>
-          <li><a class="nav-link scrollto" routerLink="/register">Register</a></li>
+          <li *ngIf="!isLogged"><a class="nav-link scrollto" routerLink="/register">Register</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
