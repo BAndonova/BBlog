@@ -10,12 +10,14 @@ import { SharedModule } from './shared/shared.module';
 import { UserModule } from './user/user.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { DetailsModule } from './details/details.module';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

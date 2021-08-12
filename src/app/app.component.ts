@@ -17,23 +17,7 @@ export class AppComponent {
   }
 
   fetchRecentPosts(): void {
-    this.recentPosts = [
-      {
-        theme: 'Test1',
-        id: '1',
-        text: 'opit 13',
-      },
-      {
-        theme: 'Test2',
-        id: '2',
-        text: 'opit 2',
-      },
-      {
-        theme: 'Test32',
-        id: '3',
-        text: 'opit 13',
-      },
-    ];
+    this.recentPosts = undefined;
     this.contentService
       .loadRecentPosts()
       .subscribe((posts) => (this.recentPosts = posts));

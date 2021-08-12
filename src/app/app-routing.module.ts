@@ -23,10 +23,10 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent
   },
-  {
-    path: 'trips&places',
-    component: TripsComponent
-  },
+  // {
+  //   path: 'trips&places',
+  //   component: TripsComponent
+  // },
   {
     path: 'books',
     component: BooksComponent
@@ -47,10 +47,10 @@ const routes: Routes = [
     path: 'quotes',
     component: QuotesComponent
   },
-  {
-    path: 'about',
-    component: AboutComponent
-  },
+  // {
+  //   path: 'about',
+  //   component: AboutComponent
+  // },
   {
     path: 'love-yourself',
     component: LoveComponent

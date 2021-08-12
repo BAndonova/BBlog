@@ -10,8 +10,8 @@
       <div *ngFor="let item of items" class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
         <div class="icon-box">
           <div class="icon"><img src="../../../assets/img/BBlog_Logo.png" alt="BBlog" width="40" height="40"></div>
-          <h4 class="title"><a href="">{{item.theme}}</a></h4>
-          <p class="description">Created by: {{item.id}}</p>
+          <h4 class="title"><a href="">{{item.themeId.themeName}}</a></h4>
+          <p class="description">Created by: {{item.themeId}}</p>
           <p class="description">Created on: {{item.text}}</p>
         </div>
       </div>
