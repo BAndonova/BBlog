@@ -3,7 +3,7 @@
   <div class="container">
 
     <div class="section-title">
-      <h2>Posts</h2>
+      <h2>Themes in Main Categories</h2>
       <p>Live, love have fun and enjoy your free time. Here are some ideas utilizing the leisure time.</p>
     </div>
 
@@ -11,9 +11,11 @@
       <div class="col-lg-12 d-flex justify-content-center">
         <ul id="portfolio-flters">
           <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">Trips</li>
-          <li data-filter=".filter-card">Books</li>
-          <li data-filter=".filter-web">Other</li>
+          <li data-filter=".filter-trips">Trips</li>
+          <li data-filter=".filter-books">Books</li>
+          <li data-filter=".filter-cookings">Cooking</li>
+          <li data-filter=".filter-love-myself">Love Myself</li>
+          <li data-filter=".filter-other">Other</li>
         </ul>
       </div>
     </div>
@@ -31,7 +33,7 @@
           <div class="portfolio-links">
             <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
               title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            <a [routerLink]="['/themes', theme._id]" title="More Details"><i class="bx bx-link"></i></a>
           </div>
         </div>
       </div>

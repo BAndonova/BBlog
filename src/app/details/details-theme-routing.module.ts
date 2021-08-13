@@ -5,15 +5,22 @@ import { PostsAllComponent } from '../core/posts-all/posts-all.component';
 import { NewThemeComponent } from './new-theme/new-theme.component';
 
 const routes: Routes = [
-    //   { path: '', pathMatch: 'full', component: PostsAllComponent },
+  {
+    path: 'themes',
+    children: [
+      { path: '', pathMatch: 'full', component: PostsAllComponent },
       { path: 'themeId', component: PostsAllComponent },
-      { path: 'new-theme', component: NewThemeComponent,
-      canActivate: [AuthActivate],
-      data: {
-        authenticationRequired: true,
-        authenticationFailureRedirectUrl: '/login',
-      } },
-
+    ],
+  },
+  {
+    path: 'new-theme',
+    component: NewThemeComponent,
+    canActivate: [AuthActivate],
+    data: {
+      authenticationRequired: true,
+      authenticationFailureRedirectUrl: '/login',
+    },
+  },
 ];
 
 @NgModule({
