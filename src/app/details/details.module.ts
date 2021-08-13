@@ -3,21 +3,24 @@ import { CommonModule } from '@angular/common';
 import { DetailsThemeComponent } from './details-theme/details-theme.component';
 import { NewThemeComponent } from './new-theme/new-theme.component';
 import { DetailsThemeRoutingModule } from './details-theme-routing.module';
+import { ThemesComponent } from './themes/themes.component';
 
 
 
 @NgModule({
   declarations: [
     DetailsThemeComponent,
-    NewThemeComponent
+    NewThemeComponent,
+    ThemesComponent
   ],
   imports: [
     CommonModule,
-    DetailsThemeRoutingModule
+    DetailsThemeRoutingModule,
   ],
   exports: [
     DetailsThemeComponent,
-    NewThemeComponent
+    NewThemeComponent,
+    ThemesComponent
     ]
 })
 export class DetailsModule { }

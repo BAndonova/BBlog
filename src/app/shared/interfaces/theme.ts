@@ -19,5 +19,7 @@ export interface Itheme {
     created_at: string,
     updatedAt: string,
     __v: number,
+    pic: BinaryType,
+    details: string
   }
   

@@ -11,10 +11,6 @@ const postSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    Pic: {
-        type: isBinaryExpression,
-        required: false
-    },
     likes: [{
         type: ObjectId,
         ref: "User"

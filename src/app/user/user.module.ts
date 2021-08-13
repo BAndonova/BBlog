@@ -6,10 +6,11 @@ import { ProfileComponent } from './profile/profile.component';
 import { UserRoutingModule } from './user-routing.module';
 import { CoreModule } from '../core/core.module';
 import { UserService } from './user.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [LoginComponent, RegisterComponent, ProfileComponent],
-  imports: [CommonModule, UserRoutingModule, CoreModule],
+  imports: [CommonModule, UserRoutingModule, CoreModule, FormsModule],
   exports: [LoginComponent, RegisterComponent, ProfileComponent],
   providers: [UserService]
 })

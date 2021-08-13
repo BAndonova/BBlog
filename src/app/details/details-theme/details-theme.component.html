@@ -1,65 +1,100 @@
-    <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs">
-        <div class="container">
-  
-          <div class="d-flex justify-content-between align-items-center">
-            <h2>Portfolio Details</h2>
-            <ol>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li>Portfolio Details</li>
-            </ol>
-          </div>
-  
-        </div>
-      </section><!-- Breadcrumbs Section -->
-  
-      <!-- ======= Portfolio Details Section ======= -->
-      <section id="portfolio-details" class="portfolio-details themes">
-        <div class="container">
-  
-          <div class="row gy-4">
-  
-            <div class="col-lg-8">
-              <div class="portfolio-details-slider swiper-container">
-                <div class="swiper-wrapper align-items-center">
-  
-                  <div class="swiper-slide">
-                    <img src="assets/img/portfolio/portfolio-1.jpg" alt="">
-                  </div>
-  
-                  <div class="swiper-slide">
-                    <img src="assets/img/portfolio/portfolio-2.jpg" alt="">
-                  </div>
-  
-                  <div class="swiper-slide">
-                    <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
-                  </div>
-  
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
+<!-- ======= Breadcrumbs Section ======= -->
+<section class="breadcrumbs">
+  <div class="container">
+
+    <div class="d-flex justify-content-between align-items-center">
+      <h2>Portfolio Details</h2>
+      <ol>
+        <li><a routerLink='/home'>Home</a></li>
+        <li><a routerLink='/themes'>All Themes</a></li>
+        <li>Theme Details</li>
+      </ol>
+    </div>
+
+  </div>
+</section><!-- Breadcrumbs Section -->
+
+<!-- ======= Portfolio Details Section ======= -->
+<section id="portfolio-details" class="portfolio-details themes">
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-8">
+        <div class="portfolio-details-slider swiper-container">
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/portfolio-1.jpg" alt="">
             </div>
-  
-            <div class="col-lg-4">
-              <div class="portfolio-info">
-                <h3>Project information</h3>
-                <ul>
-                  <li><strong>Category</strong>: Web design</li>
-                  <li><strong>Client</strong>: ASU Company</li>
-                  <li><strong>Project date</strong>: 01 March, 2020</li>
-                  <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-                </ul>
-              </div>
-              <div class="portfolio-description">
-                <h2>This is an example of portfolio detail</h2>
-                <p>
-                  Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-                </p>
-              </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/portfolio-2.jpg" alt="">
             </div>
-  
+
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
+            </div>
+
           </div>
-  
+          <div class="swiper-pagination"></div>
         </div>
-      </section><!-- End Portfolio Details Section -->
+      </div>
+
+      <div class="col-lg-4" *ngIf='theme'>
+        <div class="portfolio-info">
+          <h3>Theme information</h3>
+          <ul>
+            <li><strong>Category: </strong> {{theme.themeName}}</li>
+            <li><strong>Created by:</strong> {{theme.userId.username}}</li>
+            <li><strong>Created on:</strong> {{theme.created_at}}</li>
+            <li><strong>Additional Links: </strong><a href="#">www.example.com</a></li>
+          </ul>
+        </div>
+        <div class="portfolio-description">
+          <h2>Some details:</h2>
+          <p>
+            {{theme.details}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section id="portfolio-details" class="portfolio-details themes" *ngIf='theme'>
+  <div class="footer" *ngIf="isLogged">
+    <i class="fas fa-thumbs-up"></i>
+    <i class="fas fa-thumbs-down"></i>
+    <p><span>{{theme.likes}}</span> likes</p>
+  </div>
+
+  <div class="comment" *ngFor="let post of theme!.posts">
+    <header class="header">
+      <p><span>Mark</span> posted on <time>2020-10-10 14:28:11</time></p>
+    </header>
+    <div class="comment-main">
+      <div class="userdetails">
+        <img src="./profile.png" alt="avatar">
+      </div>
+      <div class="post-content">
+        <p>Lorem ipsum dolor sit amet consectetur </p>
+      </div>
+    </div>
+    <div class="footer">
+      <!-- <i class="fas fa-thumbs-up"></i>
+  <i class="fas fa-thumbs-down"></i> -->
+      <!-- <p><span>3</span> likes</p>
+    </div>
+  </div>
+  <div class="answer-comment">
+    <p><span>currentUser</span> comment:</p>
+    <div class="answer">
+      <form>
+        <textarea name="postText" id="comment" cols="30" rows="10"></textarea>
+        <button>Post</button>
+      </form>
+    </div>
+  </div>
+
+</section> --> -->
