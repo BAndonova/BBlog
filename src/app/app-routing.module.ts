@@ -9,6 +9,7 @@ import { QuotesComponent } from './core/quotes/quotes.component';
 import { RecentPostsComponent } from './core/recent-posts/recent-posts.component';
 import { TripsComponent } from './core/trips/trips.component';
 import { DetailsThemeRoutingModule } from './details/details-theme-routing.module';
+import { ThemesComponent } from './details/themes/themes.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { UserModule } from './user/user.module';
@@ -23,10 +24,6 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent
   },
-  // {
-  //   path: 'trips&places',
-  //   component: TripsComponent
-  // },
   {
     path: 'books',
     component: BooksComponent
@@ -43,14 +40,18 @@ const routes: Routes = [
     path: 'recent-posts',
     component: RecentPostsComponent
   },
-  {
-    path: 'quotes',
-    component: QuotesComponent
-  },
   // {
-  //   path: 'about',
-  //   component: AboutComponent
+  //   path: 'quotes',
+  //   component: QuotesComponent
   // },
+  {
+    path: 'about',
+    component: AboutComponent
+  },
+  {
+    path: 'themes',
+    component: ThemesComponent
+  },
   {
     path: 'love-yourself',
     component: LoveComponent

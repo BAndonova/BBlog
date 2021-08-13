@@ -33,6 +33,6 @@ export class ThemesComponent {
 
   fetchRecentPosts(): void {
     this.recentPosts = undefined;
-    this.contentService.loadPosts(5).subscribe(posts => this.recentPosts = posts);
+    this.contentService.loadRecentPosts(5).subscribe(posts => this.recentPosts = posts);
   }
 }

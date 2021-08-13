@@ -6,7 +6,6 @@ import { DetailsThemeRoutingModule } from './details-theme-routing.module';
 import { ThemesComponent } from './themes/themes.component';
 
 
-
 @NgModule({
   declarations: [
     DetailsThemeComponent,
