@@ -11,6 +11,8 @@ import { UserModule } from './user/user.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { DetailsModule } from './details/details.module';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -24,6 +26,8 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule,
     CoreModule,
+    HttpClientModule,
+    FormsModule,
     UserModule,
     SharedModule,
     DetailsModule

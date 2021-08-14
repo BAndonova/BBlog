@@ -48,7 +48,7 @@
             <li><strong>Category: </strong> {{theme.themeName}}</li>
             <li><strong>Created by:</strong> {{theme.userId.username}}</li>
             <li><strong>Created on:</strong> {{theme.created_at}}</li>
-            <li><strong>Additional Links: </strong><a href="#">www.example.com</a></li>
+            <!-- <li><strong>Additional Links: </strong><a href="#">www.example.com</a></li> -->
           </ul>
         </div>
         <div class="portfolio-description">
@@ -79,8 +79,8 @@
     </div>
     <div class="footer">
       <div *ngIf="isLogged">
-      <i class="fas fa-thumbs-up" (click)="onLikeClick(post._id)"></i>
-      <i class="fas fa-thumbs-down" (click)="onDislikeClick(post._id)"></i>
+      <i class="fas fa-thumbs-up" (click)="onLikeClick(post)"></i>
+      <!-- <i class="fas fa-thumbs-down" (click)="onDislikeClick(post._id)"></i> -->
     </div>
       <p><span>{{post.likes.length}}</span> likes</p>
     </div>
@@ -89,9 +89,10 @@
     <p><span>currentUser</span> comment:</p>
     <p><span *ngIf="!isLogged">Please log in to comment!</span></p>
     <div class="answer" >
-      <form>
-        <textarea name="postText" id="comment" cols="30" rows="10"></textarea>
-        <button *ngIf="isLogged">Post</button>
+      <form #form="ngForm" (ngSubmit)="createPost(form)">
+        <textarea name="postText" id="comment" cols="30" rows="10" ngModel required
+        minlength="6"></textarea>
+        <button type="submit" *ngIf="isLogged">Post</button>
       </form>
     </div>
   </div>

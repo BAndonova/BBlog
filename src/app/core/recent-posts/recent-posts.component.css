@@ -61,7 +61,7 @@
 .services .description {
   font-size: 15px;
   line-height: 24px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .services .icon-box:hover .title a, .services .icon-box:hover .description {

@@ -1,7 +1,8 @@
 /* new-theme */
 
 .new-theme-border {
-    border: 1px solid;
+    border: 1px dotted;
+    border-color: #DD5A92;
     border-radius: 1em;
     width: 80%;
     margin: auto;
@@ -11,11 +12,12 @@
 
 .new-theme-border .input {
     margin-bottom: 1em;
+    border-radius: 1.5em;
 }
 
 .header-background {
-    background-color: #4ebced;
-    border: 1px solid #4ebced;
+    background-color: #DD5A92;
+    border: 1px dotted #DD5A92;
     padding: 1.5em;
     padding-bottom: 0;
     margin-bottom: 1em;
@@ -24,10 +26,14 @@
 }
 
 .header-background span {
-    background-color: #fff;
+    background-color: white;
     padding: 0.5em;
     margin-top: 1em;
-    border-radius: 0.3em;
+    border-radius: 1em;
+    color: #DD5A92;
+    background-color: whitesmoke;
+    font-size: large;
+    font-weight: bold
 }
 
 .title, .new-theme-content {
@@ -60,17 +66,33 @@
 
 button+button {
     margin-left: 1rem;
+    color: #DD5A92;
+    background-color: whitesmoke;
+    font-size: large;
+    font-weight: bold
 }
 
 .new-theme-buttons {
     margin-top: 1em;
     text-align: center;
+    background-color: #DD5A92;
+    border: 1px dotted #DD5A92;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
 }
 
 .new-theme-buttons button {
     padding: 0.4em 1.5em;
-    border: 1px solid #333333;
-    border-radius: 0.3em;
+    border: 1px double white;
+    border-radius: 50px;
+}
+
+.cancel{
+    margin-left: 1rem;
+    color: #DD5A92;
+    background-color: whitesmoke;
+    font-size: large;
+    font-weight: bold
 }
 
 p.error {

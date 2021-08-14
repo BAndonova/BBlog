@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { NgForm } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ContentService } from 'src/app/content.service';
 import { IPost, Itheme } from 'src/app/shared/interfaces';
 import { UserService } from 'src/app/user/user.service';
@@ -17,7 +18,8 @@ export class DetailsThemeComponent {
   constructor(
     private contentService: ContentService,
     private activatedRoute: ActivatedRoute,
-    private userService: UserService
+    private userService: UserService,
+    private router: Router
   ) {
     this.fetchTheme();
     this.fetchRecentPosts();
@@ -40,12 +42,24 @@ export class DetailsThemeComponent {
   get isLogged(): boolean {
     return this.userService.isLogged;
   }
-  onLikeClick(id: any) {
-    console.log(id);
-    console.log(this.recentPosts?.find((x) => x._id === id));
-    this.recentPosts?.find((x) => x._id === id)?.likes.push('like');
+  onLikeClick(post: any) {
+    this.recentPosts?.find((x) => x._id === post._id)?.likes.push('like');
+    post.likes = this.recentPosts?.find((x) => x._id === post._id)?.likes
+    
   }
   onDislikeClick(id: any) {
     this.recentPosts?.find((x) => x.likes.push('dislike'));
+  }
+
+  createPost(form: NgForm): void {
+    if (form.invalid) { return; }
+    this.contentService.savePost(form.value).subscribe({
+      next: () => {
+        this.router.navigate(['/themes']);
+      },
+      error: (err) => {
+        console.log(err);
+      }
+    })
   }
 }

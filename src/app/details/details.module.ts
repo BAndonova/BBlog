@@ -4,16 +4,18 @@ import { DetailsThemeComponent } from './details-theme/details-theme.component';
 import { NewThemeComponent } from './new-theme/new-theme.component';
 import { DetailsThemeRoutingModule } from './details-theme-routing.module';
 import { ThemesComponent } from './themes/themes.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     DetailsThemeComponent,
     NewThemeComponent,
-    ThemesComponent
+    ThemesComponent,
   ],
   imports: [
     CommonModule,
+    FormsModule,
     DetailsThemeRoutingModule,
   ],
   exports: [

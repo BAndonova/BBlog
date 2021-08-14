@@ -1,4 +1,4 @@
-<div class="container" *ngIf="!isLogged">
+<div class="container">
     <main>
         <div class="theme-title" *ngIf="themes">
             <div *ngFor="let theme of themes" class="theme-container">
@@ -15,7 +15,7 @@
                                 </div>
                             </div>
                             <div class="subscribers">
-                                <button *ngIf="isLogged" class="subscribe">Subscribe</button>
+                                <!-- <button *ngIf="isLogged" class="subscribe">Subscribe</button> -->
                                 <p>Subscribers: <span>{{theme.subscribers.length}}</span></p>
                             </div>
                         </div>

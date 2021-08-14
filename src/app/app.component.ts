@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ContentService } from './content.service';
 import { IPost, Itheme } from './shared/interfaces';
+import { UserService } from './user/user.service';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +12,22 @@ export class AppComponent {
   // "title": "BBlog"
 
   recentPosts: IPost[] | undefined;
+  toggleTemplate = false;
 
-  constructor(private contentService: ContentService) {
+  get isAuthenticating(): boolean {
+    return this.userService.user === undefined;
+  }
+
+  constructor(
+    private contentService: ContentService,
+    private userService: UserService
+  ) {
     this.fetchRecentPosts();
+    this.userService.getProfileInfo().subscribe({
+      error: () => {
+        this.userService.user = null;
+      }
+    })
   }
 
   fetchRecentPosts(): void {

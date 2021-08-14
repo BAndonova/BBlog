@@ -5,9 +5,9 @@ import { BooksComponent } from './core/books/books.component';
 import { CookingComponent } from './core/cooking/cooking.component';
 import { LoveComponent } from './core/love/love.component';
 import { PostsAllComponent } from './core/posts-all/posts-all.component';
-import { QuotesComponent } from './core/quotes/quotes.component';
+
 import { RecentPostsComponent } from './core/recent-posts/recent-posts.component';
-import { TripsComponent } from './core/trips/trips.component';
+
 import { DetailsThemeRoutingModule } from './details/details-theme-routing.module';
 import { ThemesComponent } from './details/themes/themes.component';
 import { HomeComponent } from './home/home.component';
