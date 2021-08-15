@@ -35,7 +35,7 @@ export class UserService {
 
   getProfileInfo() {
     return this.http
-      .get<IUser>(`${apiURL}/profile`, { withCredentials: true })
+      .get<IUser>(`${apiURL}/users/profile`, { withCredentials: true })
       .pipe(tap((user) => (this.user = user)));
   }
 
@@ -47,7 +47,7 @@ export class UserService {
 
   updateProfile(data: { username: string; email: string; tel: string }) {
     return this.http
-      .put<IUser>(`${apiURL}/profile`, data, { withCredentials: true })
+      .put<IUser>(`${apiURL}/users/profile`, data, { withCredentials: true })
       .pipe(tap((user) => (this.user = user)));
   }
 }

@@ -23,8 +23,9 @@ export class HeaderComponent  {
   ) { }
 
   logout(): void {
-    this.userService.logout();
-    this.router.navigate(['/']);
+    this.userService.logout().subscribe(() => {
+      this.router.navigate(['/']);
+    });
   }
 }
 

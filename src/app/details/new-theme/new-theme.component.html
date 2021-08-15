@@ -7,32 +7,20 @@
         <form #form="ngForm" (ngSubmit)="createTheme(form)">
             <div class="new-theme-title">
                 <label for="themeName">Title <span class="red">*</span></label>
-                <!-- <select name="themeName" id="themeName">
-                    <option value="trips">Trips</option>
-                    <option value="books">Books</option>
-                    <option value="cooking">Cooking</option>
-                    <option value="Love-myself">Love Myself</option>
-                    <option value="other">Other</option>
-                </select> -->
                 <input type="text" name="themeName" id="themeName" ngModel required minlength="5"
                     aria-placeholder="Theme name is required & must be at least 5 characters long.">
             </div>
-            <div class="new-theme-content">
+            <!-- <div class="new-theme-content">
                 <label for="postText">Text <span class="red">*</span></label>
                 <textarea type="text" name="postText" id="postText" rows="3" class="height" ngModel required
                     minlength="10"
                     placeholder="The field with your post is required and should be at least 10 characters long."></textarea>
-                <!-- <p class="error">
-                    The field with your post is required.
-                </p>
-                <p class="error">
-                    Post must be at least 10 characters long.
-                </p> -->
-            </div>
+
+            </div> -->
             <div class="new-theme-content">
-                <label for="postDetails">Theme Details <span class="red">*</span></label>
-                <textarea type="text" name="postDetails" id="postDetails" rows="5" class="height" ngModel required
-                    minlength="10" placeholder="Please provide your story :)"></textarea>
+                <label for="details">Theme Details <span class="red">*</span></label>
+                <input type="text" name="details" id="details" rows="5" class="height" ngModel required
+                    minlength="10" placeholder="Please provide your story and details :)">
 
             </div>
 

@@ -1,7 +1,7 @@
  <!-- homepage -->
  <div class="container">
     <div class="profile"><img src="../../../assets/img/profile-2398782_1280.png" alt="default user">
-        <h3>User Deatils:</h3>
+        <h3>User Details:</h3>
         <ng-container *ngIf="inUpdateMode">
             <form #form="ngForm" (ngSubmit)="updateProfile(form)">
               <div class="flex">
@@ -22,10 +22,10 @@
                 </div>
               </div>
               <button type="button" class="red-button" (click)="inUpdateMode = false">Cancel</button>
-              <button class="green-button">Save</button>
+              <button type="submit" class="green-button">Save</button>
             </form>
           </ng-container>
-          <ng-container>
+          <ng-container *ngIf="!inUpdateMode">
             <div class="flex">
               <p>Username: </p>
               <p>{{user!.username}}</p>

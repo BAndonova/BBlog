@@ -4,6 +4,8 @@ export interface Itheme {
     posts: any[],
     _id: string,
     themeName: string,
+    pic: BinaryType,
+    details: string
     userId: {
       themes: string[],
       posts: string[],
@@ -19,7 +21,6 @@ export interface Itheme {
     created_at: string,
     updatedAt: string,
     __v: number,
-    pic: BinaryType,
-    details: string
+
   }
   
